@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiragana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .header {
+            background-color: #c60c30;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 1px;
+        }
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        }
+        .nav-bar {
+            background-color: #b00c25;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .nav-bar a:hover {
+            background-color: #f5f2f2;
+            color: #b00c25;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hiragana-header {
+            background-color: #b00c25;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hiragana-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .hiragana-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #b00c25;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 10px;
+            height: 100px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 30px;
+        }
+        .hiragana-pronunciation {
+            font-size: 24px;
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <span class="brand-name"><h3>NIHONGO </h3>
+                <h3>BENKYOU</h3></span>
+        </div>
+    </div>
+    
+    <div class="nav-bar">
+        <a href="index.html">HOME</a>
+        <a href="kosakata.html">KOSA KATA</a>
+        <a href="polakalimat.html">POLA KALIMAT</a>
+        <a href="kanji.html">KANJI</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="about.html">ABOUT US</a>
+    </div>
+
+    <div class="container">
+        <div class="hiragana-header">HIRAGANA</div>
+        <div class="hiragana-grid">
+            <!-- Baris pertama -->
+            <div class="hiragana-card">
+                あ
+                <div class="hiragana-pronunciation">A</div>
+            </div>
+            <div class="hiragana-card">
+                い
+                <div class="hiragana-pronunciation">I</div>
+            </div>
+            <div class="hiragana-card">
+                う
+                <div class="hiragana-pronunciation">U</div>
+            </div>
+            <div class="hiragana-card">
+                え
+                <div class="hiragana-pronunciation">E</div>
+            </div>
+            <div class="hiragana-card">
+                お
+                <div class="hiragana-pronunciation">O</div>
+            </div>
+            <!-- Baris kedua -->
+            <div class="hiragana-card">
+                か
+                <div class="hiragana-pronunciation">Ka</div>
+            </div>
+            <div class="hiragana-card">
+                き
+                <div class="hiragana-pronunciation">Ki</div>
+            </div>
+            <div class="hiragana-card">
+                く
+                <div class="hiragana-pronunciation">Ku</div>
+            </div>
+            <div class="hiragana-card">
+                け
+                <div class="hiragana-pronunciation">Ke</div>
+            </div>
+            <div class="hiragana-card">
+                こ
+                <div class="hiragana-pronunciation">Ko</div>
+            </div>
+            <!-- Baris ketiga -->
+            <div class="hiragana-card">
+                さ
+                <div class="hiragana-pronunciation">Sa</div>
+            </div>
+            <div class="hiragana-card">
+                し
+                <div class="hiragana-pronunciation">Shi</div>
+            </div>
+            <div class="hiragana-card">
+                す
+                <div class="hiragana-pronunciation">Su</div>
+            </div>
+            <div class="hiragana-card">
+                せ
+                <div class="hiragana-pronunciation">Se</div>
+            </div>
+            <div class="hiragana-card">
+                そ
+                <div class="hiragana-pronunciation">So</div>
+            </div>
+            <!-- Baris keempat -->
+            <div class="hiragana-card">
+                た
+                <div class="hiragana-pronunciation">Ta</div>
+            </div>
+            <div class="hiragana-card">
+                ち
+                <div class="hiragana-pronunciation">Chi</div>
+            </div>
+            <div class="hiragana-card">
+                つ
+                <div class="hiragana-pronunciation">Tsu</div>
+            </div>
+            <div class="hiragana-card">
+                て
+                <div class="hiragana-pronunciation">Te</div>
+            </div>
+            <div class="hiragana-card">
+                と
+                <div class="hiragana-pronunciation">To</div>
+            </div>
+            <!-- Baris kelima -->
+            <div class="hiragana-card">
+                な
+                <div class="hiragana-pronunciation">Na</div>
+            </div>
+            <div class="hiragana-card">
+                に
+                <div class="hiragana-pronunciation">Ni</div>
+            </div>
+            <div class="hiragana-card">
+                ぬ
+                <div class="hiragana-pronunciation">Nu</div>
+            </div>
+            <div class="hiragana-card">
+                ね
+                <div class="hiragana-pronunciation">Ne</div>
+            </div>
+            <div class="hiragana-card">
+                の
+                <div class="hiragana-pronunciation">No</div>
+            </div>
+            <!-- Baris keenam -->
+            <div class="hiragana-card">
+                は
+                <div class="hiragana-pronunciation">Ha</div>
+            </div>
+            <div class="hiragana-card">
+                ひ
+                <div class="hiragana-pronunciation">Hi</div>
+            </div>
+            <div class="hiragana-card">
+                ふ
+                <div class="hiragana-pronunciation">Fu</div>
+            </div>
+            <div class="hiragana-card">
+                へ
+                <div class="hiragana-pronunciation">He</div>
+            </div>
+            <div class="hiragana-card">
+                ほ
+                <div class="hiragana-pronunciation">Ho</div>
+            </div>
+            <!-- Baris ketujuh -->
+            <div class="hiragana-card">
+                ま
+                <div class="hiragana-pronunciation">Ma</div>
+            </div>
+            <div class="hiragana-card">
+                み
+                <div class="hiragana-pronunciation">Mi</div>
+            </div>
+            <div class="hiragana-card">
+                む
+                <div class="hiragana-pronunciation">Mu</div>
+            </div>
+            <div class="hiragana-card">
+                め
+                <div class="hiragana-pronunciation">Me</div>
+            </div>
+            <div class="hiragana-card">
+                も
+                <div class="hiragana-pronunciation">Mo</div>
+            </div>
+            <!-- Baris kedelapan -->
+            <div class="hiragana-card">
+                や
+                <div class="hiragana-pronunciation">Ya</div>
+            </div>
+            <div class="jeda">
+                
+                <div class="buat jeda"></div>
+            </div>
+            <div class="hiragana-card">
+                ゆ
+                <div class="hiragana-pronunciation">Yu</div>
+            </div>
+            <div class="jeda">
+                
+                <div class="buat jeda"></div>
+            </div>
+            <div class="hiragana-card">
+                よ
+                <div class="hiragana-pronunciation">Yo</div>
+            </div>
+            <!-- Baris kesembilan -->
+            <div class="hiragana-card">
+                ら
+                <div class="hiragana-pronunciation">Ra</div>
+            </div>
+            <div class="hiragana-card">
+                り
+                <div class="hiragana-pronunciation">Ri</div>
+            </div>
+            <div class="hiragana-card">
+                る
+                <div class="hiragana-pronunciation">Ru</div>
+            </div>
+            <div class="hiragana-card">
+                れ
+                <div class="hiragana-pronunciation">Re</div>
+            </div>
+            <div class="hiragana-card">
+                ろ
+                <div class="hiragana-pronunciation">Ro</div>
+            </div>
+            <!-- Baris kesepuluh -->
+            <div class="hiragana-card">
+                わ
+                <div class="hiragana-pronunciation">Wa</div>
+            </div>
+            <div class="jeda">
+                
+                <div class="buat jeda"></div>
+            </div>
+            <div class="hiragana-card">
+                を
+                <div class="hiragana-pronunciation">Wo</div>
+            </div>
+            <div class="jeda">
+                
+                <div class="buat jeda"></div>
+            </div>
+            <div class="hiragana-card">
+                ん
+                <div class="hiragana-pronunciation">N</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

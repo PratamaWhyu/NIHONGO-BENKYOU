@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji N5 - Nihongo Benkyou</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .header {
+            background-color: #c60c30;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 1px;
+        }
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        } 
+        .nav-bar {
+            background-color: #b00c25;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        .nav-bar a:hover {
+            background-color: #f5f2f2;
+            color: #b00c25;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kanji_n-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            max-width: 900px;
+            width: 100%;
+        }
+        .kanji-header {
+            display:flex;
+            background-color: #b00c25;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .kanji-header:hover {
+            transform: scale(1.05);
+        }
+        .kanji-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            width: 100%;
+        }
+        .kanji-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #b00c25;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 10px;
+            height: 100px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 30px;
+        }
+        .kanji-arti {
+            font-size: 24px;
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <span class="brand-name"><h3>NIHONGO </h3>
+                <h3>BENKYOU</h3></span>
+        </div>
+    </div>
+    
+    <div class="nav-bar">
+        <a href="index.html">HOME</a>
+        <a href="kosakata.html">KOSA KATA</a>
+        <a href="polakalimat.html">POLA KALIMAT</a>
+        <a href="#">KANJI</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="about.html">ABOUT US</a>
+    </div>
+
+    <div class="container">
+        <div class="kanji_n-grid">
+            <div class="kanji-header" onclick="window.location.href='#'">KANJI N5</div>
+            <div class="kanji-header " onclick="window.location.href='kanji/kanjiN4.html'">KANJI N4</div>
+            
+        </div>
+        
+        <div class="kanji-grid">
+            <div class="kanji-card">
+                一
+                <div class="kanji-arti">Satu</div>
+            </div>
+            <div class="kanji-card">
+                二
+                <div class="kanji-arti">Dua</div>
+            </div>
+            <div class="kanji-card">
+                三
+                <div class="kanji-arti">Tiga</div>
+            </div>
+            <div class="kanji-card">
+                四
+                <div class="kanji-arti">Empat</div>
+            </div>
+            <div class="kanji-card">
+                五
+                <div class="kanji-arti">Lima</div>
+            </div>
+            <div class="kanji-card">
+                六
+                <div class="kanji-arti">Enam</div>
+            </div>
+            <div class="kanji-card">
+                七
+                <div class="kanji-arti">Tujuh</div>
+            </div>
+            <div class="kanji-card">
+                八
+                <div class="kanji-arti">Delapan</div>
+            </div>
+            <div class="kanji-card">
+                九
+                <div class="kanji-arti">Sembilan</div>
+            </div>
+            <div class="kanji-card">
+                十
+                <div class="kanji-arti">Sepuluh</div>
+            </div>
+            <div class="kanji-card">
+                百
+                <div class="kanji-arti">Seratus</div>
+            </div>
+            <div class="kanji-card">
+                千
+                <div class="kanji-arti">Seribu</div>
+            </div>
+            <div class="kanji-card">
+                万
+                <div class="kanji-arti">Sepuluh Ribu</div>
+            </div>
+            <div class="kanji-card">
+                口
+                <div class="kanji-arti">Mulut</div>
+            </div>
+            <div class="kanji-card">
+                目
+                <div class="kanji-arti">Mata</div>
+            </div>
+            <div class="kanji-card">
+                耳
+                <div class="kanji-arti">Telinga</div>
+            </div>
+            <div class="kanji-card">
+                手
+                <div class="kanji-arti">Tangan</div>
+            </div>
+            <div class="kanji-card">
+                足
+                <div class="kanji-arti">Kaki</div>
+            </div>
+            <div class="kanji-card">
+                車
+                <div class="kanji-arti">Mobil</div>
+            </div>
+            <div class="kanji-card">
+                学
+                <div class="kanji-arti">Belajar</div>
+            </div>
+            <div class="kanji-card">
+                校
+                <div class="kanji-arti">Sekolah</div>
+            </div>
+            <div class="kanji-card">
+                生
+                <div class="kanji-arti">Hidup / Kehidupan</div>
+            </div>
+            <div class="kanji-card">
+                先
+                <div class="kanji-arti">Sebelum</div>
+            </div>
+            <div class="kanji-card">
+                今
+                <div class="kanji-arti">Sekarang</div>
+            </div>
+            <div class="kanji-card">
+                大
+                <div class="kanji-arti">Besar</div>
+            </div>
+            <div class="kanji-card">
+                小
+                <div class="kanji-arti">Kecil</div>
+            </div>
+            <div class="kanji-card">
+                上
+                <div class="kanji-arti">Atas</div>
+            </div>
+            <div class="kanji-card">
+                下
+                <div class="kanji-arti">Bawah</div>
+            </div>
+            <div class="kanji-card">
+                中
+                <div class="kanji-arti">Tengah</div>
+            </div>
+            <div class="kanji-card">
+                外
+                <div class="kanji-arti">Luar</div>
+            </div>
+            <div class="kanji-card">
+                女
+                <div class="kanji-arti">Perempuan</div>
+            </div>
+            <div class="kanji-card">
+                男
+                <div class="kanji-arti">Laki-laki</div>
+            </div>
+            <div class="kanji-card">
+                子
+                <div class="kanji-arti">Anak</div>
+            </div>
+            <div class="kanji-card">
+                兄
+                <div class="kanji-arti">Kakak Laki-laki</div>
+            </div>
+            <div class="kanji-card">
+                姉
+                <div class="kanji-arti">Kakak Perempuan</div>
+            </div>
+            <div class="kanji-card">
+                先生
+                <div class="kanji-arti">Guru</div>
+            </div>
+            <div class="kanji-card">
+                本
+                <div class="kanji-arti">Buku</div>
+            </div>
+            <div class="kanji-card">
+                自
+                <div class="kanji-arti">Diri Sendiri</div>
+            </div>
+            <div class="kanji-card">
+                車
+                <div class="kanji-arti">Mobil</div>
+            </div>
+            <div class="kanji-card">
+                友
+                <div class="kanji-arti">Teman</div>
+            </div>
+            <div class="kanji-card">
+                明
+                <div class="kanji-arti">Cerah</div>
+            </div>
+            <div class="kanji-card">
+                暗
+                <div class="kanji-arti">Gelap</div>
+            </div>
+            <div class="kanji-card">
+                天
+                <div class="kanji-arti">Langit</div>
+            </div>
+            <div class="kanji-card">
+                何
+                <div class="kanji-arti">Apa</div>
+            </div>
+            <div class="kanji-card">
+                今
+                <div class="kanji-arti">Sekarang</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

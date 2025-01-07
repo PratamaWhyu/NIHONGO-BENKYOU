@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Benkyou</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #c60c30;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 1px;
+        }
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        }
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 1150px;
+            height: 250px;
+            border-radius: 0%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            border: 2px solid #c60c30;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin-top: 15px;
+            color: #c60c30;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <span class="brand-name">
+                <h3>NIHONGO</h3>
+                <h3>BENKYOU</h3>
+            </span>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="image/banner1.png" alt="Banner">
+    </div>
+    <div class="container">
+        <div class="card" onclick="window.location.href='hiragana.html'">
+            <h3>HIRAGANA</h3>
+            <img src="image/image 2.png" alt="Hiragana">
+        </div>
+        <div class="card" onclick="window.location.href='katakana.html'">
+            <h3>KATAKANA</h3>
+            <img src="image/image 1.png" alt="Katakana">
+        </div>
+        <div class="card" onclick="window.location.href='kosakata.html'">
+            <h3>KOSA KATA</h3>
+            <img src="image/image.png" alt="Kosa Kata">
+        </div>
+        <div class="card" onclick="window.location.href='polakalimat.html'">
+            <h3>POLA KALIMAT</h3>
+            <img src="image/image 3.png" alt="Pola Kalimat">
+        </div>
+        <div class="card" onclick="window.location.href='kanji.html'">
+            <h3>KANJI</h3>
+            <img src="image/image-removebg-preview 2.png" alt="Kanji">
+        </div>
+        <div class="card" onclick="window.location.href='quiz.html'">
+            <h3>QUIZ</h3>
+            <img src="image/Frame 130.png" alt="Quiz">
+        </div>
+    </div>
+</body>
+</html>

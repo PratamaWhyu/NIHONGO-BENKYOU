@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Kosakata N5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #c60c30;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 1px;
+        }
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        }
+        .nav-bar {
+            background-color: #b00c25;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .nav-bar a:hover {
+            background-color: #f5f2f2;
+            color: #b00c25;
+            border-radius: 5px;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffe5e5;
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        .answers input {
+            margin-right: 10px;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .result {
+            display: none;
+            padding: 20px;
+            background-color: #ffe5e5;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .restart-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #c60c30;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .restart-button:hover {
+            background-color: #b00c25;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="/image/logo.png" alt="Logo" class="logo">
+            <span class="brand-name"><h3>NIHONGO </h3><h3>BENKYOU</h3></span>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="../index.html">HOME</a>
+        <a href="../kosakata.html">KOSA KATA</a>
+        <a href="../polakalimat.html">POLA KALIMAT</a>
+        <a href="../kanji.html">KANJI</a>
+        <a href="../quiz.html">QUIZ</a>
+        <a href="../about.html">ABOUT US</a>
+    </div>
+
+    <div class="quiz-container">
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. Apa arti dari "ありがとう"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="a"> Terima kasih</label><br>
+                    <label><input type="radio" name="q1" value="b"> Selamat pagi</label><br>
+                    <label><input type="radio" name="q1" value="c"> Permisi</label><br>
+                    <label><input type="radio" name="q1" value="d"> Maaf</label><br>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. Apa arti dari "おはよう"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="a"> Selamat pagi</label><br>
+                    <label><input type="radio" name="q2" value="b"> Selamat malam</label><br>
+                    <label><input type="radio" name="q2" value="c"> Terima kasih</label><br>
+                    <label><input type="radio" name="q2" value="d"> Sampai jumpa</label><br>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Apa arti dari "さようなら"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="a"> Selamat tinggal</label><br>
+                    <label><input type="radio" name="q3" value="b"> Terima kasih</label><br>
+                    <label><input type="radio" name="q3" value="c"> Permisi</label><br>
+                    <label><input type="radio" name="q3" value="d"> Maaf</label><br>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. Apa arti dari "はい"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="a"> Ya</label><br>
+                    <label><input type="radio" name="q4" value="b"> Tidak</label><br>
+                    <label><input type="radio" name="q4" value="c"> Permisi</label><br>
+                    <label><input type="radio" name="q4" value="d"> Terima kasih</label><br>
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. Apa arti dari "いいえ"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="a"> Tidak</label><br>
+                    <label><input type="radio" name="q5" value="b"> Ya</label><br>
+                    <label><input type="radio" name="q5" value="c"> Permisi</label><br>
+                    <label><input type="radio" name="q5" value="d"> Selamat pagi</label><br>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. Apa arti dari "ごめんなさい"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="a"> Maaf</label><br>
+                    <label><input type="radio" name="q6" value="b"> Terima kasih</label><br>
+                    <label><input type="radio" name="q6" value="c"> Sampai jumpa</label><br>
+                    <label><input type="radio" name="q6" value="d"> Selamat malam</label><br>
+                </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. Apa arti dari "すみません"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="a"> Permisi</label><br>
+                    <label><input type="radio" name="q7" value="b"> Selamat pagi</label><br>
+                    <label><input type="radio" name="q7" value="c"> Terima kasih</label><br>
+                    <label><input type="radio" name="q7" value="d"> Maaf</label><br>
+                </div>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. Apa arti dari "日本"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q8" value="a"> Jepang</label><br>
+                    <label><input type="radio" name="q8" value="b"> Korea</label><br>
+                    <label><input type="radio" name="q8" value="c"> China</label><br>
+                    <label><input type="radio" name="q8" value="d"> Taiwan</label><br>
+                </div>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. Apa arti dari "ありがとう"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q9" value="a"> Terima kasih</label><br>
+                    <label><input type="radio" name="q9" value="b"> Selamat pagi</label><br>
+                    <label><input type="radio" name="q9" value="c"> Maaf</label><br>
+                    <label><input type="radio" name="q9" value="d"> Selamat tinggal</label><br>
+                </div>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. Apa arti dari "わかります"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q10" value="a"> Mengerti</label><br>
+                    <label><input type="radio" name="q10" value="b"> Makan</label><br>
+                    <label><input type="radio" name="q10" value="c"> Tidur</label><br>
+                    <label><input type="radio" name="q10" value="d"> Minum</label><br>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button type="button" onclick="previousQuestion()">Preview</button>
+                <button type="button" onclick="nextQuestion()">Next</button>
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </div>
+        </form>
+        
+        <div class="result" id="result">
+            <h2>Hasil Quiz</h2>
+            <p id="score"></p>
+            <button class="restart-button" onclick="restartQuiz()">Ayo Mulai Quiz Lagi</button>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 0;
+        const questions = document.querySelectorAll('.question');
+        const correctAnswers = {
+            q1: 'a', q2: 'a', q3: 'a', q4: 'a', q5: 'a',
+            q6: 'a', q7: 'a', q8: 'a', q9: 'a', q10: 'a'
+        };
+
+        function showQuestion(index) {
+            questions.forEach((question, i) => {
+                question.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                showQuestion(currentQuestion);
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                showQuestion(currentQuestion);
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            document.getElementById('score').innerText = `Anda mendapatkan ${score} dari 10 jawaban yang benar.`;
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('quizForm').style.display = 'none';
+        }
+
+        function restartQuiz() {
+            window.location.href = '../quiz.html'; 
+        }
+
+        showQuestion(currentQuestion);
+    </script>
+</body>
+</html>

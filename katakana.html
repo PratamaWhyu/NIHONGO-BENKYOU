@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katakana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .header {
+            background-color: #c60c30;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 1px;
+        }
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        }
+        .nav-bar {
+            background-color: #b00c25;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .nav-bar a:hover {
+            background-color: #f5f2f2;
+            color: #b00c25;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .katakana-header {
+            background-color: #b00c25;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .katakana-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .katakana-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #b00c25;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 10px;
+            height: 100px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 30px;
+        }
+        .katakana-pronunciation {
+            font-size: 24px;
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <span class="brand-name"><h3>NIHONGO </h3>
+                <h3>BENKYOU</h3></span>
+        </div>
+    </div>
+    
+    <div class="nav-bar">
+        <a href="index.html">HOME</a>
+        <a href="kosakata.html">KOSA KATA</a>
+        <a href="polakalimat.html">POLA KALIMAT</a>
+        <a href="kanji.html">KANJI</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="about.html">ABOUT US</a>
+    </div>
+
+    <div class="container">
+        <div class="katakana-header">KATAKANA</div>
+        <div class="katakana-grid">
+            <!-- Baris pertama -->
+            <div class="katakana-card">
+                ア
+                <div class="katakana-pronunciation">A</div>
+            </div>
+            <div class="katakana-card">
+                イ
+                <div class="katakana-pronunciation">I</div>
+            </div>
+            <div class="katakana-card">
+                ウ
+                <div class="katakana-pronunciation">U</div>
+            </div>
+            <div class="katakana-card">
+                エ
+                <div class="katakana-pronunciation">E</div>
+            </div>
+            <div class="katakana-card">
+                オ
+                <div class="katakana-pronunciation">O</div>
+            </div>
+            <!-- Baris kedua -->
+            <div class="katakana-card">
+                カ
+                <div class="katakana-pronunciation">Ka</div>
+            </div>
+            <div class="katakana-card">
+                キ
+                <div class="katakana-pronunciation">Ki</div>
+            </div>
+            <div class="katakana-card">
+                ク
+                <div class="katakana-pronunciation">Ku</div>
+            </div>
+            <div class="katakana-card">
+                ケ
+                <div class="katakana-pronunciation">Ke</div>
+            </div>
+            <div class="katakana-card">
+                コ
+                <div class="katakana-pronunciation">Ko</div>
+            </div>
+            <!-- Baris ketiga -->
+            <div class="katakana-card">
+                サ
+                <div class="katakana-pronunciation">Sa</div>
+            </div>
+            <div class="katakana-card">
+                シ
+                <div class="katakana-pronunciation">Shi</div>
+            </div>
+            <div class="katakana-card">
+                ス
+                <div class="katakana-pronunciation">Su</div>
+            </div>
+            <div class="katakana-card">
+                セ
+                <div class="katakana-pronunciation">Se</div>
+            </div>
+            <div class="katakana-card">
+                ソ
+                <div class="katakana-pronunciation">So</div>
+            </div>
+            <!-- Baris keempat -->
+            <div class="katakana-card">
+                タ
+                <div class="katakana-pronunciation">Ta</div>
+            </div>
+            <div class="katakana-card">
+                チ
+                <div class="katakana-pronunciation">Chi</div>
+            </div>
+            <div class="katakana-card">
+                ツ
+                <div class="katakana-pronunciation">Tsu</div>
+            </div>
+            <div class="katakana-card">
+                テ
+                <div class="katakana-pronunciation">Te</div>
+            </div>
+            <div class="katakana-card">
+                ト
+                <div class="katakana-pronunciation">To</div>
+            </div>
+            <!-- Baris kelima -->
+            <div class="katakana-card">
+                ナ
+                <div class="katakana-pronunciation">Na</div>
+            </div>
+            <div class="katakana-card">
+                ニ
+                <div class="katakana-pronunciation">Ni</div>
+            </div>
+            <div class="katakana-card">
+                ヌ
+                <div class="katakana-pronunciation">Nu</div>
+            </div>
+            <div class="katakana-card">
+                ネ
+                <div class="katakana-pronunciation">Ne</div>
+            </div>
+            <div class="katakana-card">
+                ノ
+                <div class="katakana-pronunciation">No</div>
+            </div>
+            <!-- Baris keenam -->
+            <div class="katakana-card">
+                ハ
+                <div class="katakana-pronunciation">Ha</div>
+            </div>
+            <div class="katakana-card">
+                ヒ
+                <div class="katakana-pronunciation">Hi</div>
+            </div>
+            <div class="katakana-card">
+                フ
+                <div class="katakana-pronunciation">Fu</div>
+            </div>
+            <div class="katakana-card">
+                ヘ
+                <div class="katakana-pronunciation">He</div>
+            </div>
+            <div class="katakana-card">
+                ホ
+                <div class="katakana-pronunciation">Ho</div>
+            </div>
+            <!-- Baris ketujuh -->
+            <div class="katakana-card">
+                マ
+                <div class="katakana-pronunciation">Ma</div>
+            </div>
+            <div class="katakana-card">
+                ミ
+                <div class="katakana-pronunciation">Mi</div>
+            </div>
+            <div class="katakana-card">
+                ム
+                <div class="katakana-pronunciation">Mu</div>
+            </div>
+            <div class="katakana-card">
+                メ
+                <div class="katakana-pronunciation">Me</div>
+            </div>
+            <div class="katakana-card">
+                モ
+                <div class="katakana-pronunciation">Mo</div>
+            </div>
+            <!-- Baris kedelapan -->
+            <div class="katakana-card">
+                ヤ
+                <div class="katakana-pronunciation">Ya</div>
+            </div>
+            <div class="katakana">
+                
+                <div class="katakana"></div>
+            </div>
+            <div class="katakana-card">
+                ユ
+                <div class="katakana-pronunciation">Yu</div>
+            </div>
+            <div class="katakana">
+                
+                <div class="katakana"></div>
+            </div>
+            <div class="katakana-card">
+                ヨ
+                <div class="katakana-pronunciation">Yo</div>
+            </div>
+            <!-- Baris kesembilan -->
+            <div class="katakana-card">
+                ラ
+                <div class="katakana-pronunciation">Ra</div>
+            </div>
+            <div class="katakana-card">
+                リ
+                <div class="katakana-pronunciation">Ri</div>
+            </div>
+            <div class="katakana-card">
+                ル
+                <div class="katakana-pronunciation">Ru</div>
+            </div>
+            <div class="katakana-card">
+                レ
+                <div class="katakana-pronunciation">Re</div>
+            </div>
+            <div class="katakana-card">
+                ロ
+                <div class="katakana-pronunciation">Ro</div>
+            </div>
+            <!-- Baris kesepuluh -->
+            <div class="katakana-card">
+                ワ
+                <div class="katakana-pronunciation">Wa</div>
+            </div>
+            <div class="katakana">
+                
+                <div class="katakana"></div>
+            </div>
+            <div class="katakana-card">
+                ヲ
+                <div class="katakana-pronunciation">Wo</div>
+            </div>
+            <div class="katakana">
+                
+                <div class="katakana"></div>
+            </div>
+            <div class="katakana-card">
+                ン
+                <div class="katakana-pronunciation">N</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
